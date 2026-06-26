@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahix AI | Your Intelligent Workspace</title>
+    <!-- Favicon using the Rahix Logo SVG -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'><defs><linearGradient id='logoGrad' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' stop-color='%236366f1' /><stop offset='100%' stop-color='%23ec4899' /></linearGradient><radialGradient id='eyeGlow' cx='50%' cy='50%' r='50%'><stop offset='0%' stop-color='%2322d3ee' /><stop offset='100%' stop-color='%230891b2' /></radialGradient></defs><path d='M25 80V20H55C70 20 80 30 80 45C80 60 70 70 55 70H45L75 90' stroke='url(%23logoGrad)' stroke-width='12' stroke-linecap='round' stroke-linejoin='round' /><circle cx='52' cy='45' r='8' fill='url(%23eyeGlow)' /></svg>">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    typography: {
+                        DEFAULT: {
+                            css: {
+                                maxWidth: 'none',
+                                color: '#475569',
+                                lineHeight: '1.6',
+                                p: { lineHeight: '1.6', marginBottom: '1rem' },
+                                h1: {
+                                    background: 'linear-gradient(135deg, #6366f1 0%, #ec4899 100%)',
+                                    '-webkit-background-clip': 'text',
+                                    '-webkit-text-fill-color': 'transparent',
+                                    fontWeight: '800',
+                                },
+                                strong: { color: 'inherit', fontWeight: '700' },
+                            },
+                        },
+                    },
+                },
+            },
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --rahix-primary: #6366f1;
+            --rahix-primary-dark: #4f46e5;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .fira-code {
+            font-family: 'Fira Code', monospace;
+        }
+        
+        /* Premium Background */
+        .ambient-orb {
+            position: fixed;
+            width: 600px;
+            height: 600px;
+            border-radius: 50%;
+            filter: blur(80px);
+            z-index: -1;
+            opacity: 0.15;
+            animation: orbFloat 20s infinite alternate ease-in-out;
+        }
+        .dark .ambient-orb {
+            opacity: 0.25;
+        }
+
+        @keyframes orbFloat {
+            0% { transform: translate(0, 0) scale(1); }
+            50% { transform: translate(100px, 50px) scale(1.1); }
+            100% { transform: translate(-50px, 150px) scale(0.9); }
+        }
+
+        /* Glassmorphism */
+        .glass-card {
+            backdrop-filter: blur(12px);
+            transition: all 0.3s ease;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
+        .dark ::-webkit-scrollbar-thumb { background: #334155; }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+        .animate-float {
+            animation: float 4s ease-in-out infinite;
+        }
+        
+        @keyframes slideInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .reveal {
+            animation: slideInUp 0.8s ease forwards;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.38.0",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react-markdown": "https://esm.sh/react-markdown@^9.0.1",
+    "remark-gfm": "https://esm.sh/remark-gfm@^4.0.0",
+    "framer-motion": "https://esm.sh/framer-motion@^11.11.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="transition-colors duration-500 bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100">
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>

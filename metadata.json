@@ -1,0 +1,7 @@
+{
+  "name": "Rahul AI - Your Intelligent Workspace",
+  "description": "A multi-modal AI assistant featuring chat, file analysis, web search, image generation, and a collaborative Canvas Mode for document and code editing.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
