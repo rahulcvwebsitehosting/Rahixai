@@ -71,8 +71,8 @@ flowchart LR
 
 1. **Clone the repository** to your local environment.
 ```bash
-git clone https://github.com/rahulcvwebsitehosting/rahix-ai.git
-cd rahix-ai
+git clone https://github.com/rahulcvwebsitehosting/rahixai.git
+cd rahixai
 ```
 
 2. **Install all required dependencies** in one step.
@@ -319,7 +319,7 @@ This system utilizes upstream engineering frameworks including Vite, Three.js, a
 
 <div align="center">
 
-**[Get Started](https://ais-dev-qmfhridukdj2ml3sbutyvc-116124795411.asia-southeast1.run.app) • [Download](https://github.com/rahulcvwebsitehosting/rahix-ai/archive/refs/heads/main.zip) • [Contribute](https://github.com/rahulcvwebsitehosting/rahix-ai/blob/main/CONTRIBUTING.md) • [Report Issue](https://github.com/rahulcvwebsitehosting/rahix-ai/issues)**
+**[Get Started](https://ais-dev-qmfhridukdj2ml3sbutyvc-116124795411.asia-southeast1.run.app) • [Download](https://github.com/rahulcvwebsitehosting/rahixai/archive/refs/heads/main.zip) • [Contribute](https://github.com/rahulcvwebsitehosting/rahixai/blob/main/CONTRIBUTING.md) • [Report Issue](https://github.com/rahulcvwebsitehosting/rahixai/issues)**
 
 Designed by **Rahul Shyam**  
 *CTO & Senior Architect*
